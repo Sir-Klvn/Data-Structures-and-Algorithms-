@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct TreeNode 
+{
+    int data;
+    struct TreeNode* left;
+    struct TreeNode* right;
+};
+
+int main() 
+{
+    struct TreeNode* root = (struct TreeNode*)malloc(sizeof(struct TreeNode));
+    root->data = 10;
+    root->left = NULL;
+    root->right = NULL;
+
+    printf("Root node value: %d\n", root->data);
+    return 0;
+}
